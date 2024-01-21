@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Investment</h1>
+        <label for="amount">Enter the amount to invest (in ₹):</label>
+        <input type="number" id="amount" required>
+
+        <label for="duration">Enter the investment duration (in months):</label>
+        <input type="number" id="duration" required max="12">
+
+        <button onclick="calculate()">Calculate</button>
+
+        <div id="result" style="display: none;">
+            <h2>Investment Result</h2>
+            <p id="investedAmount"></p>
+            <p id="earnings"></p>
+            <p id="totalAmount"></p>
+            <div id="monthlyDetails"></div>
+            <a href="#" onclick="resetForm()">Back to Calculator</a>
+        </div>
+
+        <button id="payButton" onclick="redirectToPayment()">Invest Now</button>
+    </div>
+
+
+
+
+  
+    <script src="script.js"></script>
+</body>
+</html>
